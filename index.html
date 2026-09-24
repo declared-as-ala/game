@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="theme-color" content="#07070c" />
+    <meta
+      name="description"
+      content="SatisfyBall - 2D physics-based satisfying neon mobile game. Aim, launch, bounce, evolve, and escape across 36 handcrafted neon challenges."
+    />
+    <title>SatisfyBall</title>
+
+    <!-- Google Fonts: Outfit & Orbitron for sleek neon arcade aesthetics -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800;900&family=Outfit:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/src/styles/main.css" />
+    <link rel="stylesheet" href="/src/styles/ui.css" />
+  </head>
+  <body>
+    <div id="app" class="app-container">
+      <!-- PixiJS Canvas Layer -->
+      <div id="game-canvas-container" class="canvas-container"></div>
+
+      <!-- Interactive HTML UI Layer -->
+      <div id="ui-container" class="ui-container">
+        <!-- Screens are dynamically rendered here -->
+      </div>
+
+      <!-- Debug Overlay (Visible in dev mode) -->
+      <div id="debug-overlay" class="debug-overlay hidden">
+        <div id="debug-fps">FPS: --</div>
+        <div id="debug-bodies">Bodies: --</div>
+        <div id="debug-balls">Balls: --</div>
+        <div id="debug-particles">Particles: --</div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/app/bootstrap.ts"></script>
+  </body>
+</html>
