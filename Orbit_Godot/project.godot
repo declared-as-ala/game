@@ -1,0 +1,23 @@
+; Import this file in Godot 4.3 or later.
+config_version=5
+
+[application]
+config/name="ORBIT — Neon Prototype"
+run/main_scene="res://Main.tscn"
+config/features=PackedStringArray("4.3", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1080
+window/size/viewport_height=1920
+window/size/window_width_override=486
+window/size/window_height_override=864
+window/stretch/mode="canvas_items"
+window/handheld/orientation=1
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+environment/defaults/default_clear_color=Color(0.005, 0.008, 0.018, 1)
+
+[input_devices]
+pointing/emulate_mouse_from_touch=false

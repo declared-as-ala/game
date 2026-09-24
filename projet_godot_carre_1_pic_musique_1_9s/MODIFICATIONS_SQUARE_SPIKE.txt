@@ -1,0 +1,8 @@
+Version carré :
+- losange remplacé par un carré néon
+- 1 seul pic mobile autour des quatre côtés
+- musique conservée
+- lecture par tranches de 1,9 seconde
+- reprise au contact suivant sans redémarrer
+- arrêt définitif lorsque le morceau est terminé
+- explosion + respawn conservés
