@@ -1,0 +1,47 @@
+ORBIT — Prototype autonome pour Godot 4.3 ou plus récent
+
+OUVRIR
+1. Extraire tout le ZIP dans un dossier.
+2. Dans Godot, cliquer sur Importer et sélectionner project.godot.
+3. Ouvrir le projet, puis appuyer sur F6 (scène) ou F5 (projet).
+Aucun module externe nécessaire. Ne pas ouvrir avec Godot 3.
+
+JOUER
+La bille tourne automatiquement autour du noyau.
+Cliquer, toucher l'écran ou appuyer sur Espace pour la libérer.
+Elle part en ligne droite, dans la direction tangente à l'orbite.
+Atteindre l'orbite suivante pour y être capturé automatiquement.
+Rejoindre l'orbite dorée pour terminer. Les triangles et la sortie
+hors du terrain font perdre. Toucher pour réessayer ou continuer.
+3 niveaux : obstacles supplémentaires et rotation plus rapide.
+
+COMMANDES
+Clic / toucher / Espace / Entrée : lancer ou continuer.
+R : recommencer le niveau.
+P / Échap : pause. Toucher l'écran reprend la partie.
+H : afficher / masquer la visée.
+En haut : bouton recommencer à gauche, pause à droite.
+Le pointillé devient vert lorsque la direction permet le prochain saut.
+
+PERSONNALISER
+Sélectionner Orbit dans la scène, modifier dans l'Inspecteur :
+Orbit Speed : vitesse de rotation (1.25 par défaut).
+Launch Speed : vitesse de lancement (850 par défaut).
+Show Aim : aide à la visée.
+Marble Radius : taille de la bille.
+Dans Orbit.gd : CENTERS / RADII / COLORS pour les orbites,
+et reset_level() pour les obstacles.
+
+TECHNIQUE
+1080 x 1920 vertical ; fenêtre PC 486 x 864 redimensionnable.
+Rendu Compatibility ; halo dessiné, sans shader ou asset externe.
+Sons synthétisés inclus. Contrôle tactile prévu ; export mobile à
+configurer dans Godot avec vos modèles d'export et signature.
+C'est un projet source, pas un APK ni un exécutable.
+Ce prototype ne contient pas de fonction d'enregistrement vidéo.
+
+VÉRIFICATION
+Trajectoires vérifiées numériquement : chaque saut des trois niveaux
+possède des directions de lancement sûres. Le moteur Godot n'étant
+pas disponible dans l'environnement de création, l'exécution réelle
+et le rendu sur téléphone restent à vérifier dans votre éditeur.
